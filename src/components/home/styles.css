@@ -6,7 +6,7 @@
     display: flex;
     padding: 31px 24px;
     gap: 40px;
-    max-height: 100vh;   
+    height: calc(100vh - 62px); 
 }
 
 .content h1 {
@@ -75,7 +75,8 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 10rem;
+    height: -webkit-fill-available;
 }
 
 .content {
@@ -103,8 +104,13 @@
     font: 500 16px var(--main-font);
 }
 
+.pageListNavigators {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .logo {
-    margin-top: 338px;
     text-align: center;
     width: 227px;
     height: 66.59px;
