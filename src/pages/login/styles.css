@@ -1,50 +1,52 @@
 .loginContent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    height: 85vh;
+  height: 95vh;
 }
 
 .loginContent .input {
-    border-radius: 10px;
-    margin-bottom: 1.375rem;
-    padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.375rem;
+  padding: 0.5rem 1rem;
 
-
-    display: flex;
-    align-items: center;
-    background-color: #ffff;
+  display: flex;
+  align-items: center;
+  background-color: #ffff;
 }
 
-
-.loginContent .input input {
-    width: 12rem;
+.input input {
+  width: 12rem;
 }
 
-.loginContent .input span {
-    margin-right: 0.5rem;
+.input span {
+  margin-right: 0.5rem;
 }
+
+/* .input span:hover {
+    display: none;
+} */
 
 .img {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .loginForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 button {
-    padding: 5px 69px;
-    background-color: var(--var-color-royal-blue);
-    border-radius: 1rem;
-    border: none;
-    color: #ffff;
-    font: 500 1.25rem var(--main-font);
-    cursor: pointer;
-    margin-top: 0.625rem;
+  padding: 5px 69px;
+  background-color: var(--var-color-royal-blue);
+  border-radius: 1rem;
+  border: none;
+  color: #ffff;
+  font: 400 1.1rem var(--main-font);
+  cursor: pointer;
+  margin-top: 0.625rem;
 }
