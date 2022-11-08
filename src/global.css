@@ -1,25 +1,26 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  :root {
-    --var-color-red-fatec: #b20000;
-    --var-color-white-background: #f1f0f0;
-    --var-color-royal-blue: #4169e1;
-    --var-color-gray: #a4a4a4;
-  
-    --main-font: "Poppins", sans-serif;
-    --text-font: "Inter", sans-serif;
-  }
-  
-  body {
-    background-color: var(--var-color-white-background);
-    font: 400 1rem var(--text-font);
-  }
-  
-  input {
-    font: 400 1rem var(--text-font);
-    border: none;
-    outline: none;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+/* Theme */
+:root {
+  --var-color-red-fatec: #b20000;
+  --var-color-white-background: #f1f0f0;
+  --var-color-royal-blue: #4169e1;
+  --var-color-gray: #a4a4a4;
+
+  --main-font: "Poppins", sans-serif;
+  --text-font: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--var-color-white-background);
+  font: 400 1rem var(--text-font);
+}
+
+input {
+  font: 400 1rem var(--text-font);
+  border: none;
+  outline: none;
+}

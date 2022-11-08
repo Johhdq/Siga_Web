@@ -1,9 +1,12 @@
 import "./styles.css";
+import { MdArrowForward } from "react-icons/md";
 import logo from "../../assets/logo_siga.png";
 
 export function Home() {
   return (
     <div className="container">
+      {/* Trasnformar em um componente --- Inicio */}
+
       <div className="leftBar">
         <div className="perfil">
           <div className="imgContainer">
@@ -29,15 +32,15 @@ export function Home() {
           <div className="pageListNavigators">
             <div className="pageListItem">
               <span>Item</span>
-              <i>-</i>
+              <MdArrowForward />
             </div>
             <div className="pageListItem">
               <span>Item</span>
-              <i>-</i>
+              <MdArrowForward />
             </div>
             <div className="pageListItem">
               <span>Item</span>
-              <i>-</i>
+              <MdArrowForward />
             </div>
           </div>
 
@@ -46,6 +49,9 @@ export function Home() {
           </div>
         </div>
       </div>
+
+      {/* FIM */}
+
       <div className="content">
         <h1>
           Bem-vindo ao <strong>SIGA</strong> - Fatec Garça
