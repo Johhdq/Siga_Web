@@ -24,3 +24,10 @@ input {
   border: none;
   outline: none;
 }
+
+.container {
+  display: flex;
+  padding: 31px 24px;
+  gap: 40px;
+  height: calc(100vh - 62px);
+}

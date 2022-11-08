@@ -1,117 +1,27 @@
 * {
-    margin: 0;
-}
-
-.container {
-    display: flex;
-    padding: 31px 24px;
-    gap: 40px;
-    height: calc(100vh - 62px); 
+  margin: 0;
 }
 
 .content h1 {
-    font: 600 42px var(--main-font);
+  font: 600 42px var(--main-font);
 }
 
 .content h2 {
-    font: 500 20px var(--main-font);
+  font: 500 20px var(--main-font);
 }
 
 .content strong {
-    font-weight: 600;
-    color: var(--var-color-red-fatec);
-}
-
-.leftBar {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
-
-.perfil {
-    padding: 16px 24px;
-    border-radius: 25px;
-    background-color: white;
-}
-
-.imgContainer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-
-.homeImg {
-    width: 87px;
-    height: 87px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--var-color-white-background);
-    color: var(--var-color-red-fatec);
-}
-
-.informations {
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 6px;
-    font: 500 12px var(--main-font);
-}
-
-.informations  p{
-    font: 500 12px var(--main-font);
-}
-
-.informations  strong{
-    font: 700 12px var(--main-font);
-}
-
-.pageList {
-    padding: 17px 24px;
-    border-radius: 25px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-    height: -webkit-fill-available;
+  font-weight: 600;
+  color: var(--var-color-red-fatec);
 }
 
 .content {
-    padding: 40px;
-    border-radius: 25px;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
-.pageListItem {
-    border-radius: 15px;
-    background-color: antiquewhite;
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--var-color-white-background);
-}
-
-.pageListItem span {
-    font: 500 16px var(--main-font);
-}
-
-.pageListNavigators {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.logo {
-    text-align: center;
-    width: 227px;
-    height: 66.59px;
+  padding: 40px;
+  border-radius: 25px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }

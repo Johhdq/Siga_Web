@@ -1,0 +1,39 @@
+.profile {
+  padding: 16px 24px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.homeImg {
+  width: 87px;
+  height: 87px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--var-color-white-background);
+  color: var(--var-color-red-fatec);
+}
+
+.informations {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+  font: 500 14px var(--main-font);
+}
+
+.informations p {
+  font: 14px var(--main-font);
+}
+
+.informations strong {
+  font: 700 14px var(--main-font);
+}

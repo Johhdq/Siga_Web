@@ -1,0 +1,53 @@
+.leftBar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pagesList {
+  padding: 17px 24px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  height: -webkit-fill-available;
+}
+
+.pageItems {
+  border-radius: 15px;
+  background-color: antiquewhite;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--var-color-white-background);
+}
+
+.pageItems span {
+  font: 500 15px var(--main-font);
+}
+
+.pagesListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo {
+  text-align: center;
+  width: 227px;
+  height: 66.59px;
+}
+
+.icon {
+  padding: 3px 8px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transition: background-color 0.5s;
+  color: white;
+  background-color: var(--var-color-royal-blue);
+}
