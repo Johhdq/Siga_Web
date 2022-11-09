@@ -1,5 +1,6 @@
 import "./styles.css";
 import { MdArrowForward } from "react-icons/md";
+import { LeftSideBar } from "../../components/LeftSideBar";
 
 export function Home() {
   return (

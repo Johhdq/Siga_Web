@@ -1,7 +1,9 @@
 import "./styles.css";
 import logo from '../../assets/logo_siga.png';
+import { Navigate, useNavigate } from "react-router-dom";
 
 export function Login() {
+    const navigate = useNavigate();
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
@@ -9,7 +11,7 @@ export function Login() {
         let cpf = (document.getElementById("login") as HTMLInputElement).value;
         let senha = (document.getElementById("senha") as HTMLInputElement).value;
         console.log(`CPF: ${cpf}; SENHA: ${senha}`);
-
+        navigate('/');
     }
 
     return (
