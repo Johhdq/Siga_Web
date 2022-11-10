@@ -25,10 +25,14 @@ input {
   outline: none;
 }
 
+h2 {
+  font: 500 24px var(--main-font);
+}
+
 .container {
   display: flex;
   justify-content: center;
-  padding: 31px 21px;
+  padding: 30px 25px;
   gap: 40px;
-  height: calc(100vh - 62px);
+  height: calc(100vh - 60px);
 }

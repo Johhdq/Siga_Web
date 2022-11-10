@@ -5,12 +5,12 @@
 }
 
 .pagesList {
-  padding: 17px 24px;
+  padding: 16px 25px;
   border-radius: 25px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  justify-content: space-between;
   height: -webkit-fill-available;
 }
 
@@ -44,6 +44,7 @@
   padding: 3px 8px;
   border-radius: 16px;
   cursor: pointer;
+  color: black;
 }
 
 .icon:hover {

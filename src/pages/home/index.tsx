@@ -4,7 +4,7 @@ import { LeftSideBar } from "../../components/LeftSideBar";
 
 export function Home() {
   return (
-    <div className="content">
+    <div className="contentHome">
       <h1>
         Bem-vindo ao <strong>SIGA</strong> - Fatec Garça
       </h1>

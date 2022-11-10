@@ -1,0 +1,74 @@
+.contentNotas {
+  padding: 35px;
+  border-radius: 25px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.disciplinaContainer {
+  background-color: var(--var-color-white-background);
+  border-radius: 20px;
+  padding: 25px 50px 25px 34px;
+  height: -webkit-fill-available;
+}
+
+.disciplinaTopics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notas {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+h2:first-child {
+  margin-left: 16px;
+}
+
+.notas h2:last-child {
+  margin-right: 32px;
+}
+
+.notasRow {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.disciplina {
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 16px;
+  width: 513px;
+  margin-right: 84px;
+}
+
+.notasValues {
+  display: flex;
+  gap: 16px;
+}
+
+.notaCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mediaFinal {
+  background-color: white;
+  border-radius: 16px;
+  padding: 0 58px;
+  margin-left: 3%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

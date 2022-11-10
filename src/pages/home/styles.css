@@ -1,21 +1,17 @@
-* {
-  margin: 0;
-}
-
-.content h1 {
+.contentHome h1 {
   font: 600 42px var(--main-font);
 }
 
-.content h2 {
+.contentHome h2 {
   font: 500 20px var(--main-font);
 }
 
-.content strong {
+.contentHome strong {
   font-weight: 600;
   color: var(--var-color-red-fatec);
 }
 
-.content {
+.contentHome {
   padding: 40px;
   border-radius: 25px;
   display: flex;
