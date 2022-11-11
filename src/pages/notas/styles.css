@@ -26,17 +26,18 @@
   gap: 45px;
 }
 
-h2:first-child {
-  margin-left: 16px;
+.notas h2 {
+  padding: 0 14px;
 }
 
-.notas h2:last-child {
-  margin-right: 32px;
+.disciplinaTopicsTitle {
+  margin-left: 16px;
 }
 
 .notasRow {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+
   margin-top: 16px;
 }
 
@@ -44,19 +45,24 @@ h2:first-child {
   background-color: white;
   padding: 8px 16px;
   border-radius: 16px;
-  width: 513px;
-  margin-right: 84px;
+  margin-right: 16px;
+}
+
+.disciplinaTitle {
+  margin-right: 16px;
+  width: 480px;
 }
 
 .notasValues {
   display: flex;
-  gap: 16px;
+  gap: 45px;
 }
 
 .notaCard {
   background-color: white;
   border-radius: 16px;
   padding: 0 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,9 +71,8 @@ h2:first-child {
 .mediaFinal {
   background-color: white;
   border-radius: 16px;
-  padding: 0 58px;
-  margin-left: 3%;
-  
+  padding: 0 65px;
+
   display: flex;
   align-items: center;
   justify-content: center;
