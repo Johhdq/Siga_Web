@@ -1,0 +1,29 @@
+.contentHorario {
+  padding: 35px;
+  border-radius: 25px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.sumarioHorario {
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--var-color-white-background);
+}
+
+.titleHorario {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sumarioRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sumarioRowList {
+  margin-top: 12px
+}
