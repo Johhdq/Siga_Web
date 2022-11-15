@@ -5,6 +5,7 @@ import { Login } from "./pages/login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Notas } from "./pages/notas";
 import { Horario } from "./pages/horario";
+import { Falta } from "./pages/faltas/inde";
 
 function App() {
   const user = "Kauan";
@@ -19,6 +20,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/notas" element={<Notas />} />
               <Route path="/horario" element={<Horario />} />
+              <Route path="/faltas" element={<Falta />} />
 
               <Route path="*" element={<Home />} />
             </Routes>

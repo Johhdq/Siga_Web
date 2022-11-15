@@ -1,0 +1,49 @@
+.contentFaltas {
+  padding: 35px;
+  border-radius: 25px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.faltasGrid {
+  padding: 25px 35px;
+  background-color: var(--var-color-white-background);
+  border-radius: 20px;
+}
+
+.faltasGrid tbody:before {
+  line-height: 0px;
+  content: "-";
+  color: var(--var-color-white-background);
+  display: table-row;
+}
+
+.faltasGrid table {
+  border-collapse: separate;
+  border-spacing: 15px 20px;
+}
+
+.faltasGrid #presenca,
+#ausencia {
+  text-align: -webkit-center;
+}
+
+.faltasGrid p {
+  font: 500 1rem var(--main-font);
+}
+
+.disciplinaCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.faltaCard {
+  padding: 8px 44px;
+  background-color: white;
+  border-radius: 16px;
+  width: max-content;
+}
