@@ -1,16 +1,24 @@
 import "./styles.css";
 import logo from '../../assets/logo_siga.png';
 import { Navigate, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/auth";
 
 export function Login() {
     const navigate = useNavigate();
+    const { saveUser } = useContext(AuthContext);
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
         console.log(event);
         let cpf = (document.getElementById("login") as HTMLInputElement).value;
         let senha = (document.getElementById("senha") as HTMLInputElement).value;
+
         console.log(`CPF: ${cpf}; SENHA: ${senha}`);
+        
+        const loginResponse = 1 //fazer chamada na api
+        saveUser(loginResponse)
+        
         navigate('/');
     }
 
