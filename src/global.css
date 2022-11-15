@@ -29,10 +29,13 @@ h2 {
   font: 500 24px var(--main-font);
 }
 
+table {
+  width: 100%;
+}
+
 .container {
   display: flex;
   justify-content: center;
   padding: 30px 25px;
   gap: 40px;
-  height: calc(100vh - 60px);
 }

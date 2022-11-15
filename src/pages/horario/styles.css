@@ -5,25 +5,70 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 65px;
+  gap: 20px;
+}
+
+.sumarioContent:before {
+  line-height: 4px;
+  content: "-";
+  color: var(--var-color-white-background);
+  display: table-row;
 }
 
 .sumarioHorario {
   padding: 20px;
   border-radius: 16px;
-  background: var(--var-color-white-background);
+  background-color: var(--var-color-white-background);
 }
 
-.titleHorario {
-  display: flex;
-  justify-content: space-between;
+.sumarioHorario h3 {
+  font: 500 1rem var(--text-font);
 }
 
-.sumarioRow {
-  display: flex;
-  justify-content: space-between;
+.sumarioHorario p {
+  font: 400 14px var(--text-font);
+}
+
+.whiteSpace {
+  display: table-column;
+  width: 12px;
 }
 
 .sumarioRowList {
-  margin-top: 12px
+  margin-top: 12px;
+}
+
+.disciplinaSumarioColor {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  border-radius: 12px;
+  background-color: green;
+  text-align: center;
+}
+
+.horarioGridContent:before {
+  line-height: 0px;
+  content: "-";
+  color: var(--var-color-white-background);
+  display: table-row;
+}
+
+.horarioGrid {
+  background-color: var(--var-color-white-background);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.horarioGrid table {
+  border-collapse: separate;
+  border-spacing: 16px;
+}
+
+.horarioGrid td {
+  text-align: -webkit-center;
+}
+
+.horarioGrid h2 {
+  font: 500 1.25rem var(--main-font);
 }

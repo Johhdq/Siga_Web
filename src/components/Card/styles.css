@@ -1,0 +1,34 @@
+.cardHorario {
+  padding: 22px 15px;
+  border-radius: 20px;
+  background-color: white;
+  width: fit-content;
+}
+
+.cardHorario p {
+  font: 500 1rem var(--text-font);
+}
+
+.cardDisciplina {
+  padding: 22px 20px;
+  border-radius: 20px;
+  background-color: white;
+  width: fit-content;
+}
+
+.cardDisciplina p {
+  font: 400 1rem var(--text-font);
+}
+
+.disciplinaFlex {
+  display: flex;
+  align-items: center;
+}
+
+.disciplinaColor {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  border-radius: 12px;
+  text-align: center;
+}
