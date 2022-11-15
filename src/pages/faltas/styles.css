@@ -31,10 +31,6 @@
   text-align: -webkit-center;
 }
 
-.faltasGrid p {
-  font: 500 1rem var(--main-font);
-}
-
 .disciplinaCard {
   background-color: white;
   border-radius: 16px;
