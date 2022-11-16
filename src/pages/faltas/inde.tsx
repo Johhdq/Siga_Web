@@ -8,15 +8,17 @@ export function Falta() {
       <div className="faltasGrid">
         <table>
           <thead>
-            <td>
-              <h2 style={{ marginLeft: 16 }}>Disciplina</h2>
-            </td>
-            <td>
-              <h2 style={{ textAlign: "center" }}>Presenças</h2>
-            </td>
-            <td>
-              <h2 style={{ textAlign: "center" }}>Ausência</h2>
-            </td>
+            <tr>
+              <td>
+                <h2 style={{ marginLeft: 16 }}>Disciplina</h2>
+              </td>
+              <td>
+                <h2 style={{ textAlign: "center" }}>Presenças</h2>
+              </td>
+              <td>
+                <h2 style={{ textAlign: "center" }}>Ausência</h2>
+              </td>
+            </tr>
           </thead>
 
           <tbody>

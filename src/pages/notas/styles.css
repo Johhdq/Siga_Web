@@ -5,7 +5,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 65px;
+  gap: 20px;
 }
 
 .disciplinaContainer {

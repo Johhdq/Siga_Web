@@ -5,11 +5,11 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 65px;
+  gap: 20px;
 }
 
 .faltasGrid {
-  padding: 25px 35px;
+  padding: 5px 35px;
   background-color: var(--var-color-white-background);
   border-radius: 20px;
 }
@@ -23,7 +23,7 @@
 
 .faltasGrid table {
   border-collapse: separate;
-  border-spacing: 15px 20px;
+  border-spacing: 0px 20px;
 }
 
 .faltasGrid #presenca,

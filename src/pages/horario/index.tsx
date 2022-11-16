@@ -9,17 +9,19 @@ export function Horario() {
       <header className="sumarioHorario">
         <table>
           <thead>
-            <td>
-              <h3>Sigla</h3>
-            </td>
-            <td></td>
-            <td></td>
-            <td>
-              <h3>Disciplina</h3>
-            </td>
-            <td>
-              <h3>Professor(a)</h3>
-            </td>
+            <tr>
+              <td>
+                <h3>Sigla</h3>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <h3>Disciplina</h3>
+              </td>
+              <td>
+                <h3>Professor(a)</h3>
+              </td>
+            </tr>
           </thead>
 
           <tbody className="sumarioContent">
@@ -175,22 +177,24 @@ export function Horario() {
       <div className="horarioGrid">
         <table>
           <thead>
-            <td></td>
-            <td>
-              <h2>Segunda</h2>
-            </td>
-            <td>
-              <h2>Terça</h2>
-            </td>
-            <td>
-              <h2>Quarta</h2>
-            </td>
-            <td>
-              <h2>Quinta</h2>
-            </td>
-            <td>
-              <h2>Sexta</h2>
-            </td>
+            <tr>
+              <td></td>
+              <td>
+                <h2>Segunda</h2>
+              </td>
+              <td>
+                <h2>Terça</h2>
+              </td>
+              <td>
+                <h2>Quarta</h2>
+              </td>
+              <td>
+                <h2>Quinta</h2>
+              </td>
+              <td>
+                <h2>Sexta</h2>
+              </td>
+            </tr>
           </thead>
 
           <tbody className="horarioGridContent">
@@ -200,23 +204,48 @@ export function Horario() {
               </td>
 
               <td>
-                <Card texto="CEE002" tipo={CardType.Disciplina} cor="green" />
+                <Card
+                  texto="CEE002"
+                  tipo={CardType.Disciplina}
+                  cor="green"
+                  sigla="AGO005"
+                />
               </td>
 
               <td>
-                <Card texto="CEE002" tipo={CardType.Disciplina} cor="green" />
+                <Card
+                  texto="CEE002"
+                  tipo={CardType.Disciplina}
+                  cor="green"
+                  sigla="AGO005"
+                />
               </td>
 
               <td>
-                <Card texto="CEE002" tipo={CardType.Disciplina} cor="green" />
+                <Card
+                  texto="CEE002"
+                  tipo={CardType.Disciplina}
+                  cor="green"
+                  sigla="AGO005"
+                />
               </td>
 
               <td>
-                <Card texto="CEE002" tipo={CardType.Disciplina} cor="green" />
+                <Card
+                  texto="CEE002"
+                  tipo={CardType.Disciplina}
+                  cor="green"
+                  sigla="AGO005"
+                />
               </td>
 
               <td>
-                <Card texto="CEE002" tipo={CardType.Disciplina} cor="green" />
+                <Card
+                  texto="CEE002"
+                  tipo={CardType.Disciplina}
+                  cor="green"
+                  sigla="AGO005"
+                />
               </td>
             </tr>
           </tbody>
