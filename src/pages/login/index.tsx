@@ -8,7 +8,7 @@ import axios from "axios";
 type LoginResponse = {
   sucess: string;
   id: number;
-  typeUser: number;
+  type_user: number;
 };
 
 export function Login() {
@@ -39,7 +39,7 @@ export function Login() {
         return;
       }
 
-      saveUser(loginResponse.id);
+      saveUser(loginResponse.id, loginResponse.type_user);
       navigate("/");
 
     } catch (error) {

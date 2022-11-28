@@ -3,15 +3,19 @@ import { api } from "../services/api";
 
 // Informações do usuário
 type User = {
-  id: string;
+  senha: string;
+  ra: number;
+  cpf: string;
   email: string;
-  ra: string;
   nome: string;
+  id: number;
+  telefone: string;
+  type_user?: number;
 };
 
 type AuthContextData = {
   user: User | null;
-  saveUser: (id: number) => void;
+  saveUser: (id: number, type_user: number) => void;
   signOut: () => void;
 };
 
@@ -24,7 +28,7 @@ type AuthProvider = {
 export function AuthProvider(props: AuthProvider) {
   const [user, setUser] = useState<User | null>(null);
 
-  async function saveUser(id: number) {
+  async function saveUser(id: number, type_user: number) {
     api
       .get<User>("url")
       .then((response) => {

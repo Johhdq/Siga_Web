@@ -5,13 +5,14 @@ import { useContext } from "react";
 import { AuthContext } from "../../context/auth";
 import { useState } from "react";
 import { MdNotStarted } from "react-icons/md";
+import { api } from "../../services/api";
 
 type Grade = {
-  n1: number | null;
-  n2: number | null;
-  n3: number | null;
-  subjectId: number;
-  subjectName: string;
+  nota_n1: number | null;
+  nota_n2: number | null;
+  nota_n3: number | null;
+  materia_id: number;
+  nome: string;
 };
 
 export function Notas() {
@@ -21,8 +22,8 @@ export function Notas() {
 
   // Resgatando dados
   useEffect(() => {
-    axios
-      .get(`${baseUrl}/notas/${user?.id}`)
+    api
+      .get(`/notas/${user?.id}`)
       .then((response) => {
         if (!response) {
           console.log("erro ao consultar");
@@ -55,22 +56,22 @@ export function Notas() {
           grades.map((grade) => (
             <div className="notasRow">
               <div className="disciplina">
-                <p className="disciplinaTitle">{grade.subjectName}</p>
+                <p className="disciplinaTitle">{grade.nome}</p>
               </div>
               <div style={{ display: "flex", gap: 32 }}>
                 <div className="notasValues">
                   <div className="notaCard">
                     <p style={{ color: "royalblue" }}>
-                      {grade.n1 ? grade.n1 : "-"}
+                      {grade.nota_n1 ? grade.nota_n1 : "-"}
                     </p>
                   </div>
                   <div className="notaCard">
                     <p style={{ color: "#b20000" }}>
-                      {grade.n2 ? grade.n2 : "-"}
+                      {grade.nota_n2 ? grade.nota_n2 : "-"}
                     </p>
                   </div>
                   <div className="notaCard">
-                    <p>{grade.n3 ? grade.n3 : "-"}</p>
+                    <p>{grade.nota_n3 ? grade.nota_n3 : "-"}</p>
                   </div>
                 </div>
 
@@ -82,258 +83,6 @@ export function Notas() {
               </div>
             </div>
           ))}
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Gestão e Governança de Tecnologia da Informação
-            </p>
-          </div>
-          
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Tópicos Especiais em Informática (Escolha 2)
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Gestão e Governança de Tecnologia da Informação
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Tópicos Especiais em Informática (Escolha 2)
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Gestão e Governança de Tecnologia da Informação
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Tópicos Especiais em Informática (Escolha 2)
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Gestão e Governança de Tecnologia da Informação
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Tópicos Especiais em Informática (Escolha 2)
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="notasRow">
-          <div className="disciplina">
-            <p className="disciplinaTitle">
-              Tópicos Especiais em Informática (Escolha 2)
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: 32 }}>
-            <div className="notasValues">
-              <div className="notaCard">
-                <p style={{ color: "royalblue" }}>10</p>
-              </div>
-              <div className="notaCard">
-                <p style={{ color: "#b20000" }}>2</p>
-              </div>
-              <div className="notaCard">
-                <p>-</p>
-              </div>
-            </div>
-
-            <div className="mediaFinal">
-              <p style={{ color: "royalblue" }}>
-                <strong>6</strong>
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
